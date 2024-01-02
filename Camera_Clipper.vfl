@@ -1,0 +1,4 @@
+//Camera Clipper
+string cam = chs("cam_path");
+
+@P = fromNDC(cam, @P);
