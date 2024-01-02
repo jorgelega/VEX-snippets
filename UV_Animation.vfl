@@ -1,0 +1,5 @@
+//UV Animation
+float uv = ch('uv_mult');
+float uvOffsetSpeed = ch("uv_offset_speed");
+v@uv += set(@Time * uvOffsetSpeed, 0)* uv;
+
