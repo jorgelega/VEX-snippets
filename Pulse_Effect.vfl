@@ -1,0 +1,6 @@
+//Pulse Effect
+float pulseFrequency = ch("pulse_frequency");
+float pulseAmplitude = ch("pulse_amplitude");
+float min = ch('min');
+float max = ch('max');
+@P *= fit01((pulseAmplitude * cos(pulseFrequency*@Time)), min, max);
