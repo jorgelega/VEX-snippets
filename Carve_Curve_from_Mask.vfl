@@ -1,0 +1,12 @@
+//Carve Curve from Mask
+float map = @curveu;
+float p = chf("position");
+float t = chf("transition_width");
+
+
+p = fit01(p, -t, 1);
+float mask = fit(map, p, p+t, 1, 0);
+
+float ramp = chramp("ramp", mask);
+f@mask = ramp;
+if(@mask < 0.1) removepoint(0, @ptnum);
