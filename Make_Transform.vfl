@@ -1,0 +1,14 @@
+//Make Transfrom
+
+vector t=chv("translate"), r =chv("rotate"), s=chv("scale"),p=chv("pivot"), pr=chv("pivotRotation");
+
+matrix transform = maketransform(0,0,t,r,s,p,pr);
+
+matrix3 ident = maketransform({0,0,1},{0,1,0});
+
+float amount = ch("amount");
+
+rotate(ident,radians(amount),{0,1,0});
+
+@P *= transform + ident;
+//@P *= ident;
