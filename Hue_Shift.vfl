@@ -1,0 +1,3 @@
+//Hue Shift
+float hueShift = ch("hue_shift");
+@Cd = hsvtorgb(set(hueShift, 1, 1));

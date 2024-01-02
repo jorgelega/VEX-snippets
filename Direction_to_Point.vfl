@@ -1,0 +1,5 @@
+//Direction to Point
+vector a = @P;
+vector b = point(1,'P',0);
+
+@N = b-a;

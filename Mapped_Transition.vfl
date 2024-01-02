@@ -1,0 +1,10 @@
+//Mapped Transition
+float map = f@map;
+float p = chf("position");
+float t = chf("transition_width");
+t = max(t,  0.0001);
+
+p = fit01(p, -t, 1);
+float mask = fit(map, p, p+t, 1, 0);
+mask = chramp("ramp", mask);
+f@mask = mask;
