@@ -1,0 +1,2 @@
+//Particle life Min Max
+f@life = fit01(rand(@ptnum),chf('min'),chf('max'));
