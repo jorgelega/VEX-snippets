@@ -1,0 +1,3 @@
+//Primuv attach point
+vector pos = primuv(1, "P", chi('prim_number'), chv("uv_pos"));
+@P = pos;
