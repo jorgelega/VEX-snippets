@@ -1,0 +1,5 @@
+//Volume Sample Min Max
+float vs = volumesample(1, 0, @P);
+float min = ch('min');
+float max = ch('max');
+@Cd = fit(vs, min, max, 0, 1);
