@@ -5,8 +5,14 @@ This is my journey to learning vex and wanted to share my vex snippets along the
 
 
 
-
-
+### @Shop_Materialpath to Groups (getting shaders into Solaris)
+``` c#
+//strings to groups
+string name = split(s@shop_materialpath, '/')[-1];
+name = re_replace("[^0-9a-zA-Z\\.]", "_", name);
+string groupName = name + "_mat";
+setprimgroup(0, groupName, @primnum, 1, "set");
+```
 
 ### Camera Clipper
 ``` c#
